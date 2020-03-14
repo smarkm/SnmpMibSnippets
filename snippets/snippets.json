@@ -1,0 +1,115 @@
+{
+	
+	"OBJECT-TYPE": {
+		"prefix": "object-type",
+		"body": [
+			"${1:name} OBJECT-TYPE",
+			"SYNTAX ${2:type}",
+			"MAX-ACCESS ${3:access}",
+			"STATUS ${4:current}",
+			"DESCRIPTION",
+			"\"${7:description}",
+			"\"",
+			"::={${5:parent} ${6:number}}"
+
+		],
+		"description": "OBJECT-TYPE"
+	},
+	
+	"Counter": {
+		"prefix": "syntax:Counter",
+		"body": [
+			"Counter"
+		],
+		"description": "Counter"
+	},
+	"read_only": {
+		"prefix": "access:read-only",
+		"body": [
+			"read-only"
+		],
+		"description": "read_only"
+	},
+	"read_wirte": {
+		"prefix": "access:read_wirte",
+		"body": [
+			"read_wirte"
+		],
+		"description": "read_wirte"
+	},
+	"read_create": {
+		"prefix": "access:read_create",
+		"body": [
+			"read_create"
+		],
+		"description": "read_create"
+	},
+	"no-accessible": {
+		"prefix": "access:no-accessible",
+		"body": [
+			"read-only"
+		],
+		"description": "no-accessible"
+	},
+	"current": {
+		"prefix": "status:current",
+		"body": [
+			"current"
+		],
+		"description": "current"
+	},
+	"deprecated": {
+		"prefix": "status:deprecated",
+		"body": [
+			"deprecated"
+		],
+		"description": "deprecated"
+	},
+	"obsolete": {
+		"prefix": "status:obsolete",
+		"body": [
+			"obsolete"
+		],
+		"description": "obsolete"
+	},
+	"table": {
+		"prefix": "table",
+		"body": [
+			"${1:table} OBJECT IDENTIFIER ::= {${2:parent} ${3:number}}",
+			"",
+			"${1:table} OBJECT-TYPE",
+			"SYNTAX SEQUENCE OF ${4:entry}",
+			"MAX-ACCESS not-accessible",
+			"STATUS current",
+			"DESCRIPTION",
+			"\"",
+			"\"",
+			"::= {${2:parent} ${3:number}}",
+			"",
+			"${4:entry} OBJECT-TYPE",
+			"SYNTAX ${4:entry}",
+			"MAX-ACCESS not-accessible",
+			"STATUS current",
+			"DESCRIPTION",
+			"\"",
+			"\"",
+			"",
+			"INDEX {${5:index}}",
+			"::= {${1:table} ${nubmer}",
+			"",
+			"${5:index} OBJECT-TYPE",
+			"SYNTAX Integer32",
+			"MAX-ACCESS read-only",
+			"STATUS current",
+			"DESCRIPTION",
+			"\"",
+			"\"",
+			"::= {${4:entry} ${nubmer}}",
+			"",
+			"${4:entry} ::= SEQUENCE {",
+			"    ${5:index} Integer32",
+			"}"
+		],
+		"description": "snmp table"
+	}
+}
