@@ -2,18 +2,22 @@
     "name": "snmp-mib-snippets",
     "displayName": "SNMP Mib Snippets",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "smark",
     "engines": {
-        "vscode": "^1.43.0"
+        "vscode": "^1.12.0"
     },
     "categories": [
         "Snippets"
     ],
+    "icon": "icon.png",
     "contributes": {
         "snippets": [
             {
-                "language": "",
+                "language": "mib",
+                "path": "./snippets/snippets.json"
+            }, {
+                "language": "MIB",
                 "path": "./snippets/snippets.json"
             }
         ]
