@@ -1,0 +1,8 @@
+name OBJECT-TYPE
+SYNTAX a
+MAX-ACCESS access
+STATUS current
+DESCRIPTION
+"description
+"
+::={parent number}
