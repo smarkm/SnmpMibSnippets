@@ -95,7 +95,7 @@
 			"\"",
 			"",
 			"INDEX {${5:index}}",
-			"::= {${1:table} ${nubmer}",
+			"::= {${1:table} ${nubmer}}",
 			"",
 			"${5:index} OBJECT-TYPE",
 			"SYNTAX Integer32",
