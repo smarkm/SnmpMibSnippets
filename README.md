@@ -8,4 +8,16 @@ Initial release
 ![img](demo.gif)
 
 
+## tips
+* `init` init mib file
+* `module` module tips
+* `object*`
+* `status*`
+* `access*`
+* `syntax*`
+
+
 ## Support
+https://github.com/smarkm/SnmpMibSnippets
+
+https://github.com/smarkm/SnmpMibSnippets/issues
