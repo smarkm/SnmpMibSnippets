@@ -1,5 +1,48 @@
 {
-	
+	"Init empty MIB file": {
+		"prefix": "init",
+		"body": [
+			"-- *****************************************************************",
+			"-- ${1:Mib}  Comment",
+			"-- *****************************************************************",
+			"${1:mib} DEFINITIONS ::= BEGIN",
+			"",
+			"IMPORTS",
+			"    ${2:name} FROM ${3:MIB};",
+			"",
+			"${4}",
+			"",
+			"END"
+		],
+		"description": "Init empty MIB file"
+	},
+	"module": {
+		"prefix": "module",
+		"body": [
+			"${1:Name} MODULE-IDENTITY",
+			"     LAST-UPDATED \"\"",
+			"     ORGANIZATION \"\"",
+			"     CONTACT-INFO",
+			"       \"\"",
+			"     DESCRIPTION",
+			"        \"\"",
+			"     REVISION",
+			"        \"\"",
+			"  ::= { ${2:parent} ${3:number} }"
+		],
+		"description": "Add module"
+	},
+	"object-identity": {
+		"prefix": "object-identity",
+		"body": [
+			"${1:Name} OBJECT-IDENTITY", 
+			"    STATUS current",
+			"    DESCRIPTION",
+			"        \"\"",
+			"    ::= { ${2:Module} ${3:number} }"
+		],
+		"description": "object-identity"
+	},
 	"OBJECT-TYPE": {
 		"prefix": "object-type",
 		"body": [
