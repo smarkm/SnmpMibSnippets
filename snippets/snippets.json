@@ -66,31 +66,31 @@
 		],
 		"description": "Counter"
 	},
-	"read_only": {
+	"read-only": {
 		"prefix": "access:read-only",
 		"body": [
 			"read-only"
 		],
-		"description": "read_only"
+		"description": "read-only"
 	},
-	"read_wirte": {
-		"prefix": "access:read_wirte",
+	"read-write": {
+		"prefix": "access:read-write",
 		"body": [
-			"read_wirte"
+			"read-write"
 		],
-		"description": "read_wirte"
+		"description": "read-write"
 	},
-	"read_create": {
-		"prefix": "access:read_create",
+	"read-create": {
+		"prefix": "access:read-create",
 		"body": [
-			"read_create"
+			"read-create"
 		],
-		"description": "read_create"
+		"description": "read-create"
 	},
 	"no-accessible": {
 		"prefix": "access:no-accessible",
 		"body": [
-			"read-only"
+			"no-accessible"
 		],
 		"description": "no-accessible"
 	},
